@@ -10,7 +10,7 @@ browser instead of launching a fresh one, so cookies, localStorage, and the logg
 commands. `close-persistent.js` closes it and deletes the file.
 
 ```bash
-cd ~/BugBounty_toolkit/skills/web-testing-browser/scripts     # or ~/.hermes/skills/security/web-testing-browser/scripts
+cd toolkit/skills/web-testing-browser/scripts     # or ~/.hermes/skills/security/web-testing-browser/scripts
 
 node launch-persistent.js --headless false --url https://target/login
 #   -> a browser window opens; complete login + MFA by hand
@@ -53,5 +53,5 @@ node evaluate.js --url https://target/app \
 
 ## Stealth
 These scripts don't evade bot protection. For Cloudflare/Queue-It targets, use the stealth browser MCP
-(`~/BugBounty_toolkit/mcp/`), or add `puppeteer-extra-plugin-stealth` in `lib/browser.js` (see the comment
+(`toolkit/mcp/`), or add `puppeteer-extra-plugin-stealth` in `lib/browser.js` (see the comment
 in that file).

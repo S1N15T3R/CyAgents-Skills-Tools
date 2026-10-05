@@ -46,7 +46,7 @@ thing most bug-bounty programs punish via validity ratio, so the gate watches it
 ## The loop (always run the scripts — never eyeball it)
 
 ```bash
-EV=~/.hermes/skills/security/skill-evolve/scripts        # or ~/BugBounty_toolkit/skills/skill-evolve/scripts
+EV=~/.hermes/skills/security/skill-evolve/scripts        # or toolkit/skills/skill-evolve/scripts
 
 # 1. See where skills stand — success rate + Wilson interval + sample size, weakest first.
 python3 "$EV/skill_stats.py" report
@@ -68,7 +68,7 @@ python3 "$EV/promote.py" --skill hunter-idor --candidate /tmp/hunter-idor.candid
 ```
 
 After a promotion, re-run the toolkit installer so the change reaches `~/.claude`
-(`bash ~/BugBounty_toolkit/install.sh --agent claude --global --no-burp`).
+(`bash toolkit/install.sh --agent claude --global --no-burp`).
 
 ## The promotion gate (what "much better" means here)
 

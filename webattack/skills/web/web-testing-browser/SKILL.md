@@ -30,7 +30,7 @@ with `jq`.
 ## Setup (once)
 
 ```bash
-SKILL=~/.hermes/skills/security/web-testing-browser  # or ~/BugBounty_toolkit/skills/web-testing-browser
+SKILL=~/.hermes/skills/security/web-testing-browser  # or toolkit/skills/web-testing-browser
 cd "$SKILL/scripts"
 bash install-deps.sh    # system libs (Linux/WSL); no-op notice elsewhere
 npm install             # puppeteer, yargs
@@ -90,7 +90,7 @@ networkidle2`. All output is JSON on stdout; errors as `{ "success": false, "err
 
 ## Stealth / bot-protected targets
 These scripts use vanilla Puppeteer (no evasion). For Cloudflare/Queue-It-protected targets, use the
-stealth browser MCP instead (`~/BugBounty_toolkit/mcp/`). You can also add a stealth plugin in
+stealth browser MCP instead (`toolkit/mcp/`). You can also add a stealth plugin in
 `scripts/lib/browser.js` (see the comment there).
 
 ## Custom scripts

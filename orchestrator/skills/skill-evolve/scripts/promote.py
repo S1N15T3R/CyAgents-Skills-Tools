@@ -12,7 +12,7 @@ On PROMOTE it:
   3. Appends a promotion record (with the gate's numbers) to ~/.hermes/hunt-memory/skill_evolve.jsonl.
 
 After running this, re-run migrate_skills.py to push the change into ~/.hermes/skills/security:
-  bash ~/BugBounty_toolkit/install.sh --agent claude --global --no-burp
+  bash toolkit/install.sh --agent claude --global --no-burp
 
 Stdlib only. For authorized security testing only.
 
@@ -123,7 +123,7 @@ def main(argv=None):
     })
     print(f"Logged promotion -> {ss.LEDGER}")
     print("\nNext: re-run migrate_skills.py so ~/.hermes/skills/security picks up the change:")
-    print("  bash ~/BugBounty_toolkit/install.sh --agent claude --global --no-burp")
+    print("  bash toolkit/install.sh --agent claude --global --no-burp")
     return 0
 
 

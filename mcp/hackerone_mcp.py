@@ -12,8 +12,8 @@ import urllib.request
 import urllib.parse
 from mcp.server.fastmcp import FastMCP
 
-# Add BugBounty_toolkit tools to path
-TOOLKIT_DIR = "/home/sinister/BugBounty_toolkit"
+# Add vendored toolkit tools to path (resolve relative to this file)
+TOOLKIT_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "toolkit")
 if TOOLKIT_DIR not in sys.path:
     sys.path.insert(0, TOOLKIT_DIR)
 

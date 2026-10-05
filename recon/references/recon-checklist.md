@@ -263,7 +263,7 @@ JavaScript files often contain valuable information such as hidden API endpoints
 ## **JS file hunting:**
 
 ```haskell
-echo example.com | katana -d 3 | grep -E "\.js$" | nuclei -t /home/coffinxp/nuclei-templates/http/exposures/ -c 30
+echo example.com | katana -d 3 | grep -E "\.js$" | nuclei -t $HOME/nuclei-templates/http/exposures/ -c 30
 cat jsfiles.txt | grep -r -E "aws_access_key|aws_secret_key|api key|passwd|pwd|heroku|slack|firebase|swagger|aws_secret_key|aws key|password|ftp password|jdbc|db|sql|secret jet|config|admin|pwd|json|gcp|htaccess|.env|ssh key|.git|access key|secret token|oauth_token|oauth_token_secret"
 cat allurls.txt | grep -E "\.js$" | httpx-toolkit -mc 200 -content-type | grep -E "application/javascript|text/javascript" | cut -d' ' -f1 | xargs -I% curl -s % | grep -E "(API_KEY|api_key|apikey|secret|token|password)"
 ```
@@ -272,7 +272,7 @@ cat allurls.txt | grep -E "\.js$" | httpx-toolkit -mc 200 -content-type | grep -
 
 ```haskell
 echo domain.com | katana -ps -d 2 | grep -E "\.js$" | nuclei -t /nuclei-templates/http/exposures/ -c 30
-cat alljs.txt | nuclei -t /home/coffinxp/nuclei-templates/http/exposures/
+cat alljs.txt | nuclei -t $HOME/nuclei-templates/http/exposures/
 ```
 
 [**How to Identify Sensitive Data in JavaScript Files: (JSRecon)Find sensitive data in Jsfiles**

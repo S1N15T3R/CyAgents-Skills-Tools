@@ -1,0 +1,64 @@
+# ─────────────────────────────────────────────────────────────
+# CyAgents-Skills-Tools — repo hygiene
+# ─────────────────────────────────────────────────────────────
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+
+# Secrets / tokens — never commit
+.env
+*.env
+secrets.txt
+api_keys.txt
+.private/
+*.pem
+*.key
+*.p12
+credentials.json
+
+# OS / editor
+.DS_Store
+.AppleDouble
+*.swp
+*~
+
+# Logs & tool output
+*.log
+*.out
+nmap-output/
+
+# Hunt artifacts (per-program output, never commit)
+findings/
+reports/
+hunt-memory/
+hunt.env
+*.burp
+*.json.bak
+*.txt.bak
+
+# Local planning notes
+/tasks/
+
+# ─────────────────────────────────────────────────────────────
+# Vendored toolkit/ — its own runtime output & machine-local files
+# (scoped so it does NOT swallow the repo-root recon/ skills dir)
+# ─────────────────────────────────────────────────────────────
+/toolkit/recon/
+/toolkit/findings/
+/toolkit/reports/
+/toolkit/hunt-memory/
+/toolkit/config.json
+/toolkit/hunt.env
+/toolkit/.hermes.md
+/toolkit/.venv/
+/toolkit/venv/
+/toolkit/bin/
+/toolkit/__pycache__/
+/toolkit/.pytest_cache/
+/toolkit/.atlas/
+/toolkit/.forge/

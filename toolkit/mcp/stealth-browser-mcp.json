@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "stealth-browser": {
+      "command": "REPLACE_WITH/stealth-browser-mcp/venv/bin/python",
+      "args": ["REPLACE_WITH/stealth-browser-mcp/src/server.py"],
+      "env": {}
+    }
+  }
+}
