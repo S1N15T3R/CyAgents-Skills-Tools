@@ -1,0 +1,1 @@
+/home/sinister/BugBounty_toolkit/tools/_auth_helper.sh

@@ -1,0 +1,1 @@
+/home/sinister/BugBounty_toolkit/tools/zero_day_fuzzer.py

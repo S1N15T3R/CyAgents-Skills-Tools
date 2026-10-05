@@ -1,0 +1,1 @@
+/home/sinister/BugBounty_toolkit/scripts/dork_runner.py

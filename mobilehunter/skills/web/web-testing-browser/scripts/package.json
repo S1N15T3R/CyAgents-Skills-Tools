@@ -1,0 +1,11 @@
+{
+  "name": "bbtk-web-testing-browser",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Puppeteer CLI scripts for authorized authenticated web security testing (BugBounty_toolkit).",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "puppeteer": "^23.0.0",
+    "yargs": "^17.7.2"
+  }
+}

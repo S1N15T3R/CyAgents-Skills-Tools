@@ -1,0 +1,1 @@
+/home/sinister/BugBounty_toolkit/tools/graphql_audit.sh

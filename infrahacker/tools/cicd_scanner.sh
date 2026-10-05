@@ -1,0 +1,1 @@
+/home/sinister/BugBounty_toolkit/tools/cicd_scanner.sh
